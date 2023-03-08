@@ -48,7 +48,7 @@ window.ontouchmove = (e) => {
     if (images.dataset.mouseDownAt == 0) return;
 
     const mouseChange = parseFloat(images.dataset.mouseDownAt) - (e.touches[0]).clientX;
-    const maxChange = window.innerWidth / 2;
+    const maxChange = window.innerWidth / 4;
 
     const percentage = (mouseChange) / maxChange * -100;
     const nextPercentageFree = parseFloat(images.dataset.prevPercentage) + percentage;
